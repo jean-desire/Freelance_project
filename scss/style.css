@@ -128,9 +128,56 @@ footer {
 }
 
 .ContactSection {
-  background-color: #f3f3f3;
   min-height: calc(100vh - 86px);
-  padding-top: 10rem;
+  padding-top: 3rem;
+}
+
+.p-Contact {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.Formulaire {
+  margin-top: 5rem;
+}
+
+.md-outline.select-wrapper + label {
+  top: .5em !important;
+  z-index: 2 !important;
+}
+
+.SelectOp {
+  margin-top: -1.5rem;
+}
+
+#contact-form input[type=text], #contact-form textarea {
+  background-color: #e0dfdf;
+  border: none;
+  outline: none;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#contact-form ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#contact-form :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#contact-form ::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#contact-form ::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .Charge {

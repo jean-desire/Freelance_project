@@ -130,9 +130,41 @@ footer {
 }
 
 .ContactSection{
-    background-color: #f3f3f3;
     min-height: calc(100vh - 86px);
-    padding-top: 10rem;
+    padding-top: 3rem;
+}
+.p-Contact {
+    font-size: 12px;
+    font-style: italic;
+}
+.Formulaire {
+    margin-top: 5rem;
+}
+.md-outline.select-wrapper+label {
+    top: .5em !important;
+    z-index: 2 !important;
+}
+.SelectOp{
+    margin-top: -1.5rem;
+}
+
+#contact-form {
+    input[type=text], textarea {
+        background-color: rgb(224, 223, 223);
+        border: none;
+        outline:none;
+    }
+    input:focus, textarea:focus {
+        outline:none !important;
+        outline-width: 0 !important;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
+    ::placeholder {
+        color: rgba($color: black, $alpha: 0.6);
+    }
 }
 
 .Charge {
