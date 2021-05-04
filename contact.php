@@ -155,7 +155,7 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <div class="status" id="status"></div>
+                                    <div class="status font-weight-bold text-red-400" id="status"></div>
 
                                     <div class="text-center text-md-left mt-5 flex items-center justify-center">
                                         <a id="ButtonEnSavoirPlus" class="px-8 py-2 text-lg font-medium transition-colors duration-300 transform rounded-full" onclick="validateForm();">Envoyer</a>
