@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Contact | Horeb Technology</title>
+  <!-- MDB icon -->
+  <link rel="shortcut icon" href="images/MLogo.png">
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Open+Sans:400,400i,600,600i">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="scss/style.css"> 
+</head>
+
+
+<body>
+
+    <div>
+
+        <div id="Langues" class="dotted-scrollspy">
+            <ul class="nav flex-column">
+                <a class="nav-link font-bold LangueActive p-1" href="#"><span><i class="fas fa-language"></i> Fr</span></a>
+                <a class="nav-link LangueNonActive p-1" href="#"><span>Ang</span></a>
+                <a class="nav-link LangueNonActive p-1" href="#"><span>Esp</span></a>
+            </ul>
+        </div>
+        <!-- <div class="BarLangue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="flex font-bold">
+                            <li><i class="fas fa-globe"></i><a href="#" class="active">Français</a></li>
+                            <li><a href="#" class="LangueNonActive">Anglais</a></li>
+                            <li><a href="#" class="LangueNonActive">Espagnol</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    
+        <header class="" id="NavBar" x-data="{ isOpen: false }">
+            <nav class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+                <div class="flex items-center justify-between">
+                    <a class="text-sm font-bold text-white transition-colors duration-300 transform md:text-sm hover:text-yellow-500"
+                        href="/contact.html"><span class="Ht">HT</span>.horeb technology</a>
+        
+                    <!-- Mobile menu button -->
+                    <div @click="isOpen = !isOpen" class="flex md:hidden">
+                        <button type="button" class="text-gray-200 hover:text-gray-400 focus:outline-none focus:text-yellow-500"
+                            aria-label="toggle menu">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                                <path fill-rule="evenodd"
+                                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        
+                <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                <div :class="isOpen ? 'flex' : 'hidden'"
+                    class="flex-col mt-2 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
+                    <a class="text-sm font-medium text-gray-400 transition-colors duration-300 transform hover:text-yellow-500"
+                        href="/accueil.html">Accueil</a>
+                    <a class="text-sm font-medium text-gray-400 transition-colors duration-300 transform hover:text-yellow-500"
+                        href="#">Qui sommes nous</a>
+                    <a class="text-sm font-medium text-gray-400 transition-colors duration-300 transform hover:text-yellow-500"
+                        href="#">Nos prestations</a>
+                    <a class="px-4 py-1 text-sm font-medium text-center text-gray-200 transition-colors duration-300 transform border active rounded hover:text-yellow-500"
+                        href="/contact.html">Contactez-nous</a>
+                </div>
+            </nav>
+        </header>
+    
+        
+        <section class="ContactSection">
+            <div class="max-w-5xl px-6 py-10 mx-auto">
+                <div class="items-center md:flex md:space-x-6">
+                    <div class="md:w-1/2 mt-5">
+                        <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">Site web vitrine, publicitaire, e-commerce <br> amet, consectetur</h3>
+                        <p class="max-w-md mt-4 text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.<br /><a href="#" id="ButtonEnSavoirPlus" class="rounded-full font-semibold text-md-center px-2 py-1 m-2">En savoir plus...</a> </p>
+                        </div>
+                            <div class="px-12">
+                        <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2 -mt-2" data-ride="carousel">
+                            <div class="carousel-inner v-2" role="listbox">
+                                <div class="carousel-item active">
+                                <div class="col-md-4">
+                                    <div class="mb-2">
+                                        <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/9/93/Wordpress_Blue_logo.png">
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="mb-2">
+                                        <img
+                                        src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="mb-2">
+                                        <img
+                                        src="https://img.icons8.com/ios/452/react-native.png">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="mb-2">
+                                        <img
+                                        src="https://img.icons8.com/color/452/mongodb.png">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="mb-2">
+                                        <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/1200px-Database-mysql.svg.png">
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div> 
+                    </div>
+        
+                    <div class="md:mt-0 md:w-1/2">
+                        <div class="flex items-center justify-center">
+                            <div class="max-w-md">
+                                <img class="w-full" style="height: 300px; width: 320px"
+                                    src="images/section.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <footer class="border-t">
+            <div class="container flex items-center justify-between px-6 py-8 mx-auto">
+                <p class="text-gray-100">© 2019-2021 All Rights Reserved.</p>
+                <p class="font-medium text-gray-100">Terms of Service</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+</html>
