@@ -199,6 +199,11 @@
 // Material Select Initialization
 $(document).ready(function() {
 $('.mdb-select').materialSelect();
+
+$('status').show();
+setTimeout(function() {
+    $('#status').fadeOut('fast');
+}, 3000); // <-- time in milliseconds
 });
  </script> 
   <script>

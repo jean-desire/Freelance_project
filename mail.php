@@ -20,6 +20,11 @@ exit();
 if ($subject === ''){
 print json_encode(array('message' => 'Subject cannot be empty', 'code' => 0));
 exit();
+}else {
+  if (!isPhone($subject)){
+  print json_encode(array('message' => 'Email format invalid.', 'code' => 0));
+  exit();
+}
 }
 if ($message === ''){
 print json_encode(array('message' => 'Message cannot be empty', 'code' => 0));
@@ -40,7 +45,7 @@ function isEmail($email)
 }
 function isPhone($phone) 
 {
-    return preg_match("/^[0-9 ]*$/",$phone);
+    return preg_match("/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im",$phone);
 }
 function test_input($data) 
 {
